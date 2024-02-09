@@ -17,6 +17,15 @@
             background-color: #fff; /* Set default background color */
             color: #333; /* Set default text color */
         }
+        .marquee p {
+            display: inline-block;
+            animation: marquee 20s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0%   { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
 
         .toggle-container {
             display: flex;
@@ -235,3 +244,4 @@
 </body>
 
 </html>
+            
