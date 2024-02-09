@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
@@ -53,13 +53,30 @@
             border-color: #fff; /* Set navbar toggler border color */
         }
 
+        /* Carousel Styles */
+        #carouselExample {
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .carousel-inner img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            border-radius: 90px; /* Sesuaikan dengan tingkat bulatan yang diinginkan */
+        }
+
         /* Footer Styles */
         .footer-container {
             background-color: rgb(6, 130, 16);
             color: #fff;
             padding: 20px 0;
             margin-top: 50px;
-            text-align: center;
+            text-align: center; /* Center align content */
         }
 
         .footer-section h3 {
@@ -79,32 +96,18 @@
             margin-bottom: 10px;
         }
 
-        /* Profile Styles */
-        .profile-container {
+        .contact-info {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center align content horizontally */
         }
 
-        .profile-image {
-            margin-bottom: 20px;
-        }
-
-        .profile-description {
-            text-align: left;
-            max-width: 500px; /* Adjust max-width as needed */
-            margin: auto;
-        }
-
-        .profile-description h5 {
-            margin-bottom: 10px;
+        .contact-info p {
+            margin: 5px 0; /* Add some vertical spacing between elements */
         }
     </style>
 </head>
-
 <body>
-    
-    
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
@@ -145,6 +148,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    
     <!-- Tema on-->
     <div class="toggle-container">
         <label for="theme-toggle">Tema : </label>
@@ -181,9 +185,9 @@
         </ul>
 
         <h6 class="judul "> Tunggu apalagi, daftarkan dirimu sekarang juga di MAN Insan Cendekia Lampung Timur!! </h6>
-    
+    </div>
 
-   <!-- Footer -->
+    <!-- Footer -->
     <div class="footer-container">
         <footer class="container-footer">
             <div class="content">
@@ -232,5 +236,4 @@
         });
     </script>
 </body>
-
 </html>
