@@ -1,7 +1,7 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="style.css" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>All We Can It</title>
@@ -53,29 +53,13 @@
             border-color: #fff; /* Set navbar toggler border color */
         }
 
-        /* Carousel Styles */
-        #carouselExample {
-            max-width: 80%;
-            margin: auto;
-        }
-
-        .carousel-inner img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-
-        .carousel-control-prev,
-        .carousel-control-next {
-            border-radius: 90px; /* Sesuaikan dengan tingkat bulatan yang diinginkan */
-        }
-
         /* Footer Styles */
         .footer-container {
             background-color: rgb(6, 130, 16);
             color: #fff;
             padding: 20px 0;
             margin-top: 50px;
+            text-align: center;
         }
 
         .footer-section h3 {
@@ -94,13 +78,32 @@
         .footer-section li {
             margin-bottom: 10px;
         }
+
+        /* Profile Styles */
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image {
+            margin-bottom: 20px;
+        }
+
+        .profile-description {
+            text-align: left;
+            max-width: 500px; /* Adjust max-width as needed */
+            margin: auto;
+        }
+
+        .profile-description h5 {
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 
 <body>
-    
-    
-    
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
@@ -140,6 +143,7 @@
         </div>
     </nav>
     <!-- Navbar End -->
+    
     <!-- Tema on-->
     <div class="toggle-container">
         <label for="theme-toggle">Tema : </label>
@@ -158,7 +162,7 @@
         </div>
         <div class="profile-container">
             <div class="profile-image">
-              <img src="foto.jpg" alt="Foto Pribadi" style="max-width: 250px;">
+              <img src="foto.jpg" alt="Foto Pribadi" style="max-width: 100%; height: auto;">
             </div>
             <div class="profile-description">
               <h5>Profile</h5>
@@ -178,21 +182,10 @@
               <a href="CV.pdf" class="btn btn-primary">Kunjungi CV</a>
             </div>
           </div>
-
-    <!-- Carousel -->
-    <div>
-
     </div>
-    <!-- Carousel End -->
 
-    <!-- Description -->
-    <div>
-
-    </div>
-    <!-- Description End -->
-
-     <!-- Footer -->
-     <div class="footer-container">
+    <!-- Footer -->
+    <div class="footer-container">
         <footer class="container-footer">
             <div class="content">
                 <div class="contact-info">
@@ -200,7 +193,7 @@
                   <p class="instagram" >Instagram : <a href="https://www.instagram.com/naufaaalhadiii/" target="_blank" style="color: black; text-decoration: none;">@naufaaalhadiii</a></p>
                   <p class="whatsapp" >Whatsapp : <a href="wa.me/+6281218145823" target="_blank" style="color: black; text-decoration: none;"> 081218145823</a></p>
                 </div>
-            
+            </div>
         </footer>
     </div>
     <!-- Footer End -->
