@@ -91,8 +91,9 @@ html{
   body {
     margin: 0;
     font-family: 'Times New Roman', Times, serif, sans-serif;
+    
   }
-  
+ 
   .container {
     width: 80%;
     margin: 0 auto;
@@ -173,3 +174,99 @@ html{
     100% { transform: translateX(-100%); }
   }
   
+
+  body {
+      transition: background-color 0.5s ease;
+      font-family: 'Helvetica', Arial, sans-serif;
+      padding: 20px;
+      background-color: #fff; /* Set default background color */
+      color: #333; /* Set default text color */
+  }
+
+  .toggle-container {
+      display: flex;
+      align-items: center;
+      font: optional; 
+  }
+
+  #theme-toggle {
+      margin-left: 10px;
+      cursor: pointer;
+  }
+
+  /* Dark Mode Styles */
+  body.dark-mode {
+      background-color: #1a1a1a;
+      color: #c5c1c1;
+  }
+
+  /* Navbar Styles */
+  .navbar {
+      background-color: rgb(6, 130, 16); /* Set navbar background color */
+  }
+
+  .navbar-brand,
+  .navbar-nav .nav-link {
+      color: #fff; /* Set navbar text color */
+  }
+
+  .navbar-toggler-icon {
+      background-color: #fff; /* Set navbar toggler icon color */
+  }
+
+  .navbar-toggler {
+      border-color: #fff; /* Set navbar toggler border color */
+  }
+
+  /* Carousel Styles */
+  #carouselExample {    
+      max-width: 80%;
+      margin: auto;
+  }
+
+  .carousel-inner img {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+  }
+
+  .carousel-control-prev,
+  .carousel-control-next {
+      border-radius: 90px; /* Sesuaikan dengan tingkat bulatan yang diinginkan */
+  }
+
+  /* Footer Styles */
+  .footer-container {
+      background-color: rgb(6, 130, 16);
+      color: #fff;
+      padding: 20px 0;
+      margin-top: 50px;
+      text-align: center; /* Center align content */
+  }
+
+  .footer-section h3 {
+      color: #fff; /* Set footer section heading color */
+  }
+
+  .footer-section a {
+      color: #fff; /* Set footer section link color */
+  }
+
+  .footer-section ul {
+      list-style: none;
+      padding: 0;
+  }
+
+  .footer-section li {
+      margin-bottom: 10px;
+  }
+
+  .contact-info {
+      display: flex;
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align content horizontally */
+  }
+
+  .contact-info p {
+      margin: 5px 0; /* Add some vertical spacing between elements */
+  }
